@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>FitApp - Mobile App HTML Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner"
+            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-xl position-relative p-0" id="home" style="width: 100% ;">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="m-0">AL-THURAYA</h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto py-0">
+                        <a href="#home" class="nav-item nav-link active">Home</a>
+                        <a href="#about" class="nav-item nav-link">About</a>
+                        <a href="#feature" class="nav-item nav-link">Products</a>
+                        <a href="#partners" class="nav-item nav-link">Partners</a>
+                        <a href="#blogs" class="nav-item nav-link">Blog</a>
+                        <a href="#contact" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <a href="" class="btn btn-primary-gradient rounded-pill py-2 px-4 ms-3 d-none d-lg-block"><svg
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="20px" height="20px"
+                            fill-rule="evenodd" clip-rule="evenodd">
+                            <path fill="#fff"
+                                d="M4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98c-0.001,0,0,0,0,0h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303z" />
+                            <path fill="#fff"
+                                d="M4.868,43.803c-0.132,0-0.26-0.052-0.355-0.148c-0.125-0.127-0.174-0.312-0.127-0.483l2.639-9.636c-1.636-2.906-2.499-6.206-2.497-9.556C4.532,13.238,13.273,4.5,24.014,4.5c5.21,0.002,10.105,2.031,13.784,5.713c3.679,3.683,5.704,8.577,5.702,13.781c-0.004,10.741-8.746,19.48-19.486,19.48c-3.189-0.001-6.344-0.788-9.144-2.277l-9.875,2.589C4.953,43.798,4.911,43.803,4.868,43.803z" />
+                            <path fill="#cfd8dc"
+                                d="M24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,4C24.014,4,24.014,4,24.014,4C12.998,4,4.032,12.962,4.027,23.979c-0.001,3.367,0.849,6.685,2.461,9.622l-2.585,9.439c-0.094,0.345,0.002,0.713,0.254,0.967c0.19,0.192,0.447,0.297,0.711,0.297c0.085,0,0.17-0.011,0.254-0.033l9.687-2.54c2.828,1.468,5.998,2.243,9.197,2.244c11.024,0,19.99-8.963,19.995-19.98c0.002-5.339-2.075-10.359-5.848-14.135C34.378,6.083,29.357,4.002,24.014,4L24.014,4z" />
+                            <path fill="#40c351"
+                                d="M35.176,12.832c-2.98-2.982-6.941-4.625-11.157-4.626c-8.704,0-15.783,7.076-15.787,15.774c-0.001,2.981,0.833,5.883,2.413,8.396l0.376,0.597l-1.595,5.821l5.973-1.566l0.577,0.342c2.422,1.438,5.2,2.198,8.032,2.199h0.006c8.698,0,15.777-7.077,15.78-15.776C39.795,19.778,38.156,15.814,35.176,12.832z" />
+                            <path fill="#fff" fill-rule="evenodd"
+                                d="M19.268,16.045c-0.355-0.79-0.729-0.806-1.068-0.82c-0.277-0.012-0.593-0.011-0.909-0.011c-0.316,0-0.83,0.119-1.265,0.594c-0.435,0.475-1.661,1.622-1.661,3.956c0,2.334,1.7,4.59,1.937,4.906c0.237,0.316,3.282,5.259,8.104,7.161c4.007,1.58,4.823,1.266,5.693,1.187c0.87-0.079,2.807-1.147,3.202-2.255c0.395-1.108,0.395-2.057,0.277-2.255c-0.119-0.198-0.435-0.316-0.909-0.554s-2.807-1.385-3.242-1.543c-0.435-0.158-0.751-0.237-1.068,0.238c-0.316,0.474-1.225,1.543-1.502,1.859c-0.277,0.317-0.554,0.357-1.028,0.119c-0.474-0.238-2.002-0.738-3.815-2.354c-1.41-1.257-2.362-2.81-2.639-3.285c-0.277-0.474-0.03-0.731,0.208-0.968c0.213-0.213,0.474-0.554,0.712-0.831c0.237-0.277,0.316-0.475,0.474-0.791c0.158-0.317,0.079-0.594-0.04-0.831C20.612,19.329,19.69,16.983,19.268,16.045z"
+                                clip-rule="evenodd" />
+                        </svg> WhatsApp</a>
+                </div>
+            </nav>
+
+            <div class="container-xxl bg-primary hero-header">
+                <div class="container px-lg-5">
+                    <div class="row g-5">
+                        <div class="col-lg-8 text-center text-lg-start">
+                            <h1 class="text-white mb-4 animated slideInDown">TAL-THURAYA UNITED EST is a Leading company
+                                dealing in Personal Protective Equipment,
+                                Industrial Safety Equipment, Fire Extinguishers & Hydrants.</h1>
+                            <p class="text-white pb-3 animated slideInDown">Tempor rebum no at dolore lorem clita rebum
+                                rebum ipsum rebum stet dolor sed justo kasd. Ut dolor sed magna dolor sea diam. Sit diam
+                                sit justo amet ipsum vero ipsum clita lorem</p>
+                            <a href=""
+                                class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill me-3 animated slideInLeft">Read
+                                More</a>
+                            <a href=""
+                                class="btn btn-secondary-gradient py-sm-3 px-4 px-sm-5 rounded-pill animated slideInRight">Contact
+                                Us</a>
+                        </div>
+                        <div class="col-lg-4 d-flex justify-content-center justify-content-lg-end wow fadeInUp"
+                            data-wow-delay="0.3s">
+                            <div class="owl-carousel screenshot-carousel">
+                                <img class="img-fluid" src="img/bg.webp" alt="">
+                                <img class="img-fluid" src="img/bg.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+
+        <!-- About Start -->
+        <div class="container-xxl py-5" id="about">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.1s">
+                        <h5 class="text-primary-gradient fw-medium">About App</h5>
+                        <p class="mb-4">AL-THURAYA UNITED EST is a Leading company dealing in Personal Protective
+                            Equipment,
+                            Industrial Safety Equipment, Fire Extinguishers & Hydrants,
+                            Our product range includes Personal Protective Equipment like Safety Helmets, Safety
+                            Eyewear,
+                            Hearing Protective Equipment, Protective Face Shields, Respiratory Protective Equipment,
+                            Industrial
+                            Hand Gloves, Industrial Garments, Safety Shoes, Gas Detectors, Spill Kits & Sorbents,
+                            Traffic Safety
+                            Products, Fire Extinguishers & Hydrants, and a vast range of Fall Protection Equipment.
+                            Besides these,
+                            engineered safety solutions like anchorage systems, specialized rope access, evacuation and
+                            rescue
+                            products, and confined space entry/ egress systems also form a part of our Product
+                            Portfolio.
+                            We also provide services like, Refilling of SCBA Cylinders and maintenance of Fire
+                            Extinguishers.
+                            “AL‐THURAYA" has got the recognition in the field of Supply of Industrial Safety & Personal
+                            protective
+                            equipment and Fire Extinguishers & Hydrants, just because of ‐
+                             Complete range of Quality products confirming to International standards & after sales
+                            support
+                            from our principles.
+                             Eagerness to deliver best possible services & timely supply to our esteemed customers.
+                             Extended services to site safety surveys that help prescribing an effective safety
+                            equipment
+                            mix and live demonstrations, trainings & workshops to ensure effective equipment
+                            utilization.
+                             Well‐equipped state‐of‐art technology, excellent infrastructure and qualified & trained
+                            staff.
+                            We provide complete safety solution across the Automobile & Ancillary, Construction,
+                            Engineering, Oil
+                            & Gas, Cement, Fire Services, Pharmaceuticals, Power, Petrochemicals, Steel, Transmission,
+                            Telecommunication and General Industries.
+                            We strongly believe in providing the best possible & comfortable safety solution to minimize
+                            the
+                            accidents at your workplace & maximize the protection of your workforce. </p>
+
+                        <a href="" class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill mt-3">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+
+        <!-- Features Start -->
+        <div class="container-xxl py-5" id="feature">
+            <div class="container py-5 px-lg-5">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="text-primary-gradient fw-medium">Products</h5>
+                    <h1 class="mb-5">Product Categories</h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="feature-item bg-light rounded p-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient1 rounded-circle mb-4"
+                                style="width: 60px; height: 60px;">
+                                <!-- <i class="fa fa-eye text-white fs-4"></i> -->
+                                <img src="img/head.png" />
+                            </div>
+                            <h5 class="mb-3">Head Protection</h5>
+                            <p class="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet
+                                diam sed stet lorem.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="feature-item bg-light rounded p-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient2 rounded-circle mb-4"
+                                style="width: 60px; height: 60px;">
+                                <!-- <i class="fa fa-layer-group text-white fs-4"></i> -->
+                                <img src="img/hearing.png" />
+                            </div>
+                            <h5 class="mb-3">Hearing Protection</h5>
+                            <p class="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet
+                                diam sed stet lorem.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="feature-item bg-light rounded p-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient3 rounded-circle mb-4"
+                                style="width: 60px; height: 60px;">
+                                <img src="img/eye.png" />
+                            </div>
+                            <h5 class="mb-3">Eye Protection & Accessories</h5>
+                            <p class="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet
+                                diam sed stet lorem.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="feature-item bg-light rounded p-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient3 rounded-circle mb-4"
+                                style="width: 60px; height: 60px;">
+                                <img src="img/face.png" />
+                            </div>
+                            <h5 class="mb-3">Face Protection</h5>
+                            <p class="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet
+                                diam sed stet lorem.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="feature-item bg-light rounded p-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient3 rounded-circle mb-4"
+                                style="width: 60px; height: 60px;">
+                                <img src="img/resp.png" />
+                            </div>
+                            <h5 class="mb-3">Respiratory Protection</h5>
+                            <p class="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet
+                                diam sed stet lorem.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="feature-item bg-light rounded p-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient3 rounded-circle mb-4"
+                                style="width: 60px; height: 60px;">
+                                <img src="img/hand.png" />
+                            </div>
+                            <h5 class="mb-3">Hand Protection</h5>
+                            <p class="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet
+                                diam sed stet lorem.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Features End -->
+
+
+
+
+
+        <!-- Process Start -->
+        <div class="container-xxl py-5" id="blogs">
+            <div class="container py-5 px-lg-5">
+                <div class="text-center pb-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="text-primary-gradient fw-medium">Blogs</h5>
+                    <h1 class="mb-5">Blogs</h1>
+                </div>
+                <div class="row gy-5 gx-4 justify-content-center">
+                    <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="position-relative bg-light rounded pt-5 pb-4 px-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle position-absolute top-0 start-50 translate-middle shadow"
+                                style="width: 100px; height: 100px;">
+                                <i class="fa fa-solid fa-3x fa-blog"></i>
+                            </div>
+                            <h5 class="mt-4 mb-3">Blog #1</h5>
+                            <p class="mb-0">Tempor erat elitr rebum clita dolor diam ipsum sit diam amet diam eos erat
+                                ipsum et lorem et sit sed stet</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="position-relative bg-light rounded pt-5 pb-4 px-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle position-absolute top-0 start-50 translate-middle shadow"
+                                style="width: 100px; height: 100px;">
+                                <i class="fa fa-solid fa-3x fa-blog"></i>
+                            </div>
+                            <h5 class="mt-4 mb-3">Blog #2</h5>
+                            <p class="mb-0">Tempor erat elitr rebum clita dolor diam ipsum sit diam amet diam eos erat
+                                ipsum et lorem et sit sed stet</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="position-relative bg-light rounded pt-5 pb-4 px-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle position-absolute top-0 start-50 translate-middle shadow"
+                                style="width: 100px; height: 100px;">
+                                <i class="fa fa-solid fa-3x fa-blog"></i>
+                            </div>
+                            <h5 class="mt-4 mb-3">Blog #3</h5>
+                            <p class="mb-0">Tempor erat elitr rebum clita dolor diam ipsum sit diam amet diam eos erat
+                                ipsum et lorem et sit sed stet</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Process Start -->
+
+
+
+
+        <!-- Testimonial Start -->
+        <div class="container-xxl py-5" id="partners">
+            <div class="container py-5 px-lg-5">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="text-primary-gradient fw-medium">Partners</h5>
+                    <h1 class="mb-5">Our Channel Partners!</h1>
+                </div>
+                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="testimonial-item rounded p-4">
+                        <div class="d-flex align-items-center mb-4">
+                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/p1.png"
+                                style="width: 85px; height: 85px;">
+                            <div class="ms-4">
+                                <h5 class="mb-1">Partner Name</h5>
+                                <p class="mb-1">Profession</p>
+                            </div>
+                        </div>
+                        <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et
+                            eos. Clita erat ipsum et lorem et sit.</p>
+                    </div>
+                    <div class="testimonial-item rounded p-4">
+                        <div class="d-flex align-items-center mb-4">
+                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/p2.png"
+                                style="width: 85px; height: 85px;">
+                            <div class="ms-4">
+                                <h5 class="mb-1">P Name</h5>
+                                <p class="mb-1">Profession</p>
+                            </div>
+                        </div>
+                        <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et
+                            eos. Clita erat ipsum et lorem et sit.</p>
+                    </div>
+                    <div class="testimonial-item rounded p-4">
+                        <div class="d-flex align-items-center mb-4">
+                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/p3.png"
+                                style="width: 85px; height: 85px;">
+                            <div class="ms-4">
+                                <h5 class="mb-1">Partner Name</h5>
+                                <p class="mb-1">Profession</p>
+                            </div>
+                        </div>
+                        <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et
+                            eos. Clita erat ipsum et lorem et sit.</p>
+                    </div>
+                    <div class="testimonial-item rounded p-4">
+                        <div class="d-flex align-items-center mb-4">
+                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/p1.png"
+                                style="width: 85px; height: 85px;">
+                            <div class="ms-4">
+                                <h5 class="mb-1">RTYY Name</h5>
+                                <p class="mb-1">Profession</p>
+                            </div>
+                        </div>
+                        <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et
+                            eos. Clita erat ipsum et lorem et sit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+
+
+        <!-- Contact Start -->
+        <div class="container-xxl py-5" id="contact">
+            <div class="container py-5 px-lg-5">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="text-primary-gradient fw-medium">Contact Us</h5>
+                    <h1 class="mb-5">Get In Touch!</h1>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <div class="wow fadeInUp" data-wow-delay="0.3s">
+                            <p class="text-center mb-4">Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi.
+                                Curabitur facilisis ornare velit non vulpu</p>
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                            <label for="name">Your Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control" id="email"
+                                                placeholder="Your Email">
+                                            <label for="email">Your Email</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                            <label for="subject">Subject</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <textarea class="form-control" placeholder="Leave a message here"
+                                                id="message" style="height: 150px"></textarea>
+                                            <label for="message">Message</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 text-center">
+                                        <button class="btn btn-primary-gradient rounded-pill py-3 px-5"
+                                            type="submit">Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact End -->
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-3">
+                        <h4 class="text-white mb-4">Address</h4>
+                        <p><i class="fa fa-map-marker-alt me-3"></i>P.O.BOX 1176, P.C. 131.
+                        </p>
+                        <p><i class="fa fa-phone-alt me-3"></i>+968-24501204, +968-99882501</p>
+                        <!-- <p><i class="fa fa-phone-alt me-3"></i>GHALA,MUSCAT GSM: +968-99882501</p> -->
+                        <!-- <p><i class="fa fa-phone-alt me-3"></i>SULTANTE OF OMAN +968-92993417</p> -->
+                        <p><i class="fa fa-envelope me-3"></i>info@althurayasafety.com</p>
+                        <!-- <p><i class="fa fa-envelope me-3"></i> greenislandoman@gmail.com </p> -->
+
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h4 class="text-white mb-4">Quick Link</h4>
+                        <a class="btn btn-link" href="">About Us</a>
+                        <a class="btn btn-link" href="">Contact Us</a>
+                        <a class="btn btn-link" href="">Privacy Policy</a>
+                        <a class="btn btn-link" href="">Terms & Condition</a>
+                        <a class="btn btn-link" href="">Career</a>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h4 class="text-white mb-4">Popular Link</h4>
+                        <a class="btn btn-link" href="">About Us</a>
+                        <a class="btn btn-link" href="">Contact Us</a>
+                        <a class="btn btn-link" href="">Privacy Policy</a>
+                        <a class="btn btn-link" href="">Terms & Condition</a>
+                        <a class="btn btn-link" href="">Career</a>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h4 class="text-white mb-4">Newsletter</h4>
+                        <p>Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit
+                            non vulpu</p>
+                        <div class="position-relative w-100 mt-3">
+                            <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text"
+                                placeholder="Your Email" style="height: 48px;">
+                            <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i
+                                    class="fa fa-paper-plane text-primary-gradient fs-4"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container px-lg-5">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">AL-THURAYA</a>, All Right Reserved.
+
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="">Home</a>
+                                <a href="">Cookies</a>
+                                <a href="">Help</a>
+                                <a href="">FQAs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up text-white"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
